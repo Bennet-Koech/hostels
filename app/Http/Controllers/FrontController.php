@@ -3,17 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use App\Category;
 
 class FrontController extends Controller
 {
     public function index()
     {
-        return view('front.home');
+        $rooms=Product::all();
+        return view('front.home', compact('rooms'));
     }
     
     public function rooms()
     {
-        return view('front.rooms');
+        $rooms=Product::all();
+        return view('front.rooms', compact('rooms'));
     }
 
     public function room()

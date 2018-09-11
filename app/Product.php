@@ -7,7 +7,7 @@ use App\Category;
 
 class Product extends Model
 {
-    protected $fillable=['name', 'description', 'size', 'image', 'category_id'];
+    protected $fillable=['name', 'description', 'size', 'price', 'image', 'category_id'];
 
     public function category()
     {

@@ -7,190 +7,34 @@
 
 <!-- products listing -->
 <div class="row">
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
+    @forelse ($rooms as $room)
+        <div class="small-3 columns">
+            <div class="item-wrapper">
+                <div class="img-wrapper">
+                    <a class="button expanded add-to-cart">
+                        Add to Cart
+                    </a>
+                    <a href="#">
+                    <img src="{{url('images',$room->image)}}"/>
+                    </a>
+                </div>
+                <a href="{{route('room')}}">
+                    <h3>
+                        {{$room->name}}
+                    </h3>
                 </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
+                <h5>
+                    $19.99
+                </h5>
+                <p>
+                    {{$room->description}}
+                </p>
             </div>
-            <a href="{{route('room')}}">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="http://i.imgur.com/Mcw06Yt.png"/>
-                </a>
-            </div>
-            <a href="#">
-                <h3>
-                    Kickin with Kraken Tee
-                </h3>
-            </a>
-            <h5>
-                $19.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-            </p>
-        </div>
-    </div>
+        </div>    
+    @empty
+        <h3>No rooms available</h3>
+    @endforelse
+    
 </div>
 
 @endsection

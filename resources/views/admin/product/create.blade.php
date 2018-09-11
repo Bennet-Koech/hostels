@@ -20,14 +20,19 @@
             </div>
 
             <div class="form-group">
-                    {{Form::label('category_id', 'Category')}}
-                    {{Form::select('category_id', $categories, null, ['class' =>'form-control', 'placeholder'=>'Select'])}}
+                {{Form::label('price', 'Price')}}
+                {{Form::text('price', null, array('class' =>'form-control'))}}
             </div>
 
             <div class="form-group">
-                    {{Form::label('image', 'Image')}}
-                    {{Form::file('image', array('class' =>'form-control'))}}
-                </div>
+                {{Form::label('category_id', 'Category')}}
+                {{Form::select('category_id', $categories, null, ['class' =>'form-control', 'placeholder'=>'Select'])}}
+            </div>
+
+            <div class="form-group">
+                {{Form::label('image', 'Image')}}
+                {{Form::file('image', array('class' =>'form-control'))}}
+            </div>
 
             {{Form::submit('Create', array('class'=>'btn btn-default'))}}
             {!! Form::close()!!}

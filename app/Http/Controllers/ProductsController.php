@@ -15,7 +15,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $products=Product::all();
+        return view('admin.product.index',compact('products'));
     }
 
     /**
@@ -42,6 +43,7 @@ class ProductsController extends Controller
         $this->validate($request,[
             'name'=>'required',
             'size'=>'required',
+            'price'=>'required',
             'image'=>'image|mimes:png,jpg,jpeg|max:10000'
         ]);
         //Image upload
