@@ -6,7 +6,12 @@
     <ul>
         @forelse ($products as $product)
             <li>
-            <h4>Name: {{$product->name}}</h4>
+            <h4>{{$product->name}}</h4>
+                <form action="{{route('product.destroy',$product->id)}}"  method="POST">
+                    {{csrf_field()}}
+                    {{method_field('DELETE')}}
+                    <input class="btn btn-sm btn-danger" type="submit" value="Delete">
+                </form>
             </li>
         @empty
             <h3>No products</h3>

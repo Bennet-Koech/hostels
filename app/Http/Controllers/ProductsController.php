@@ -54,7 +54,7 @@ class ProductsController extends Controller
             $formInput['image']=$imageName;
         }
         Product::create($formInput);
-        return redirect()->route('admin.index');
+        return redirect()->route('product.index');
 
     }
 
@@ -100,6 +100,7 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $products=Product::destroy($id);
+        return back();
     }
 }

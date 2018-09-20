@@ -37,7 +37,7 @@
                                     CONTACT
                                 </a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#">
                                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
                                     </i>
@@ -46,7 +46,7 @@
                                         8
                                     </span>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ol>
                     </div>
                 </div>

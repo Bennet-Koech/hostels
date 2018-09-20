@@ -10,7 +10,7 @@
                     <li>
                     <a href="{{route('category.show',$category->id)}}">{{$category->name}}</a>
                     </li>
-                @empty
+                @empty  
                     <h3>No data available</h3>
                 @endforelse
             @endif
